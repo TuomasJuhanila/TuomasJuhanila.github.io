@@ -1,0 +1,234 @@
+* {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+html {
+  scroll-behavior:smooth
+}
+body {
+  background-color: black;
+}
+.mainMenu {
+  background-color: black;
+  width: 100vw;
+  z-index: 1;
+  display: none;
+  position: fixed;
+}
+.mainMenu.toggleCls {
+  display: block;
+  transition: all 0.5s;
+}
+.mainMenuItems {
+  list-style: none;
+  display: flex;
+  padding: 4px;
+  margin: 0;
+  font-size: 25px;
+  flex-direction: column;
+  text-align: center;
+}
+.mainMenuItems li a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.6s;
+}
+.mainMenuItems li a:hover{
+  color: orange ;
+}
+.hamIcon {
+  position: static;
+}
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.6s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: fixed;
+  top: 22px;
+  right: 15px;
+  height: 22px;
+  width: 22px;
+  z-index: 2;
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 22px;
+  background-color: white;
+}
+.spinner:hover {
+  color: orange ;
+}
+.horizontal {
+  transition: all 0.2s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.6s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.6s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.6s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.6s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.6s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+.fa-arrow-alt-circle-left {
+  color: white;
+  transform: rotate(90deg);
+  font-size: 32px;
+  transition: all 0.6s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 2;
+}
+.fa-arrow-alt-circle-left:hover {
+  color: orange ;
+}
+.hero {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image:  url(img/pizzaCebula.jpg);
+}
+.backgroundImg1 {
+  height: 40vh;
+  width: 100vw;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(24, 20, 2, 0.8), rgba(24, 27, 2, 0.5) ), url(img/pizzaCapriciosaCorner.jpg);
+}
+.backgroundImg2 {
+  height: 40vh;
+  width: 100vw;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(24, 20, 2, 0.8), rgba(24, 27, 2, 0.5) ), url(img/pizzaParma.jpg);
+}
+.logoMainPage {
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%)
+}
+#pizzaMenu, #orderNow, #aboutUs {
+  margin: 0;
+  padding-top: 5%;
+}
+.section {
+  color: white;
+  margin: 0 7% 7% 7%;
+}
+#pizzaMenu {
+  text-align: center;
+  margin: 20px auto;
+}
+.menuPics img{
+  margin: 20px auto;
+  max-width: 90vw;
+  align-items: center;
+}
+#orderNow {
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+#orderNow h3 {
+  padding-top: 20px;
+  font-size: 35px
+}
+#aboutUs h2, h3 {
+  text-align: center;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contactDetails {
+  margin-top: 30px;
+  border: solid orange 2px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.icon {
+  margin: 10px;
+  color: white;
+}
+.openingTime {
+  padding-left: 35px;
+  margin-bottom: 8px;
+}
+
+@media(min-width: 768px) {
+
+  .hamIcon {
+    display: none;
+  }
+  .mainMenu {
+    position: fixed;
+    top: 0;
+    display: block;
+  }
+  .mainMenuItems {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .mainMenuItems li a{
+    text-decoration: none;
+    color: white;
+    padding-right: 25px;
+  }
+  .logoMainPage {
+    width: 400px;
+  }
+  .contact {
+    flex-direction: row;
+    justify-content: space-between
+  }
+}
