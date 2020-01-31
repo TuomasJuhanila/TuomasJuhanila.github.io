@@ -179,7 +179,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .menuPics img{
   margin: 20px auto;
-  width: 90vw;
+  width: 85vw;
   align-items: center;
 }
 #orderNow {
