@@ -154,7 +154,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   background-image: linear-gradient( rgba(24, 20, 2, 0.8), rgba(24, 27, 2, 0.5) ), url(img/pizzaPepperoni\ -\ Photo\ by\ Alan\ Hardman\ on\ Unsplash\ \(1\)_Easy-Resize.com.jpg);
 }
 .logoMainPage {
-  width: 350px;
+  width: 250px;
   border-radius: 50%;
   border: 6px white dotted;
   position: absolute;
@@ -179,7 +179,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .menuPics img{
   margin: 20px auto;
-  width: 60vw;
+  width: 90vw;
   align-items: center;
 }
 #orderNow {
@@ -189,7 +189,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 #orderNow h3 {
   padding-top: 20px;
-  font-size: 35px;
+  font-size: 28px;
 }
 #orderNow h2 {
   padding-bottom: 5%;
@@ -208,7 +208,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   align-items: center;
 }
 .contactDetails {
-  width: 70%;
+  width: 95%;
   margin-top: 30px;
   border: solid #ff3b10 3px;
   padding: 10px;
@@ -249,6 +249,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
   .logoMainPage {
     width: 400px;
+  }
+  .menuPics img{
+    width: 60vw;
   }
   .contact {
     flex-direction: row;
