@@ -13,3 +13,9 @@ Pizzeria landing page
 - Responsive
 - Images from Unsplash.com
 - Pictures done with Canva.com
+
+
+Portfolio page
+- Done with HTML, CSS and Vanilla Javascript
+- Responsive
+- Images from Unsplash.com
