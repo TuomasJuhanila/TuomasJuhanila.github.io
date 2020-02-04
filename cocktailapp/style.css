@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(161, 164, 165);
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.container {
+  margin: auto;
+  margin-bottom: 3%;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+button {
+  border: 1px solid rgb(161, 164, 165);
+  background-color: black;
+  border-radius: 10px;
+  font-size: 32px;
+  margin: 5% auto;
+  padding: 8px 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(161, 164, 165);
+  cursor: pointer;
+  box-shadow: white 0 0 6px 2px;
+}
+button:focus {
+  outline: 0;
+}
+button:hover {
+  border: 1px solid rgb(151, 154, 155);
+  background-color: rgb(24, 23, 23);
+  border-radius: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(131, 134, 135);
+  cursor: pointer;
+  box-shadow: rgb(151, 154, 155) 0 0 6px 2px;
+}
+.cocktailInfo {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.randomCocktail {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: rgb(151, 154, 155);
+  box-shadow: white 0 0 2px ;
+  border-radius: 20px;
+}
+.randomCocktailInner {
+  display: flex;
+  flex-direction: column;
+}
+.cocktailImg,
+.cocktailDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+.cocktailDetails {
+  border-top: 2px solid rgb(161, 164, 165);
+}
+.cocktailImg img {
+  width: 65vw;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: white 0 0 2px;
+}
+.cocktailDetails ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.cocktailDetails ul li {
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  background-color: #fff;
+  display: inline-block;
+  color: #2d2013;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0 5px 5px 0;
+}
+
+@media (min-width: 800px) {
+  .container {
+    height: 90vh;
+  }
+  .randomCocktailInner {
+    flex-direction: row;
+  }
+  .cocktailImg,
+  .cocktailDetails {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .cocktailDetails {
+    border-left: 2px solid rgb(161, 164, 165);
+    border-top: none;
+  }
+  .cocktailDetails h3, p, ul {
+    margin-top: 0;
+  }
+  .cocktailImg img {
+    width: 60%;
+    margin: auto;
+  }
+}
