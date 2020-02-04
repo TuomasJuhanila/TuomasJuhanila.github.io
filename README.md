@@ -19,3 +19,9 @@ Portfolio page
 - Done with HTML, CSS and Vanilla Javascript
 - Responsive
 - Images from Unsplash.com
+
+
+Cocktail app
+- Done with HTML, CSS and Vanilla Javascript
+- Responsive
+- API : https://www.thecocktaildb.com/
